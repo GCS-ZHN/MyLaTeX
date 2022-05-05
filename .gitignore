@@ -1,14 +1,12 @@
-/.aux
-/lshort-zh-cn.pdf
-/notebook.aux
-/notebook.bbl
-/notebook.blg
-/notebook.fdb_latexmk
-/notebook.fls
-/notebook.idx
-/notebook.ilg
-/notebook.ind
-/notebook.log
-/notebook.out
-/notebook.pdf
-/notebook.synctex.gz
+# LaTeX compile file
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.synctex.gz
