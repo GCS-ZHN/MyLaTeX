@@ -1,0 +1,23 @@
+\section{代码环境}
+\subsection{使用verbatim}
+其一可以使用verbatim和berbatim*，会将代码原样转义输出
+\begin{verbatim}
+#include <iostream>
+int main()
+{
+    std::cout << "Hello world" << std::endl;
+}
+\end{verbatim}
+verbatim*会将空格显示出来
+\begin{verbatim*}
+#include <iostream>
+int main()
+{
+    std::cout << "Hello world" << std::endl;
+}
+\end{verbatim*}
+
+\subsection{使用verb}
+\textbackslash verb命令使用很简单，其形式为`\verb+\verb<分隔符><代码><分隔符>+'的形式，
+其中分隔符可以是除字母、空格或星号外的任意内容，并注意不要与代码本身冲突。
+\textbackslash verb*同理显示空格，例如：\verb*+int a = 1+。

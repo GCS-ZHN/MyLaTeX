@@ -1,0 +1,23 @@
+\documentclass[UTF8, a4paper]{ctexart}
+\title{LaTeX学习笔记}
+\author{张洪宁\thanks{mail:zhang.h.n@foxmail.com}}
+\date{\today}
+\usepackage{makeidx}
+\usepackage{amsmath}
+\makeindex
+\bibliographystyle{plain}
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+\newpage
+\raggedright
+\input{section/general.tex}
+\input{section/list.tex}
+\input{section/code.tex}
+\input{section/hyperref.tex}
+\input{section/bibliography.tex}
+\input{section/math.tex}
+\newpage
+\bibliography{bibliography}
+\printindex
+\end{document}

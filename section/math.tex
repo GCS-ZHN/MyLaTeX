@@ -1,0 +1,43 @@
+\section{数学公式}
+本部分许多内容需要amsmath宏包，请用\textbackslash usepackage\{amsmath\}导入。
+\subsection{行内公式}
+众所周知，markdown中的行内公式是使用一对\$来界定，而这个习俗正是来自于latex原生语法规则。
+例如勾股定理公式为$a^2+b^2=c^2$。其公式语法由众多特定标记形成。
+
+\subsection{行间公式}
+在markdown中行间公式由一对\$\$来界定，而latex中直接使用equation环境来界定。
+例如公式\ref{weijifen}是牛顿-莱布尼兹公式：
+\begin{equation}
+    \int_a^bf(x)dx=F(b)-F(a) \label{weijifen}
+\end{equation}
+
+此外可以使用\textbackslash [和\textbackslash ]包裹进行无编号的行间公式编写，例如下面公式是
+余弦定理的表述，此时\textbackslash label命令不显示标签：
+\[c^2=a^2+b^2-2ab\cos (C) \]
+
+\subsection{多行公式}
+\subsubsection{长公式换行}
+有的时候一个公式很长，需要进行换行，可以使用multline环境，使用\textbackslash\textbackslash进行换
+行。公式编号居末尾，例如：
+
+\begin{multline}
+a + b + c + d + e +f + g + h +i \\
+= j + k + l + +m +n \\
+= o +p + q + r + s \\
+= t + u + v + x + z 
+\end{multline}
+
+\subsubsection{多行多公式}
+例如需要多行多个公式，等号对齐，此时可以使用align和gather等环境，align可以将\&两侧的部分对齐，例如：
+\begin{align}
+    a & = b + c \\
+    & = d +e
+\end{align}
+
+而gather则不会对齐
+\begin{gather}
+    a = b + c \\
+    d = e + f + g \\
+    h + i = j + k \notag \\
+    l + m = n
+\end{gather}
